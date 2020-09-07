@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Ninja.Orders/.vs/Ninja.Orders/v16
+/Ninja.Orders/Ninja.Orders/obj
