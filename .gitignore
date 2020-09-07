@@ -4,3 +4,9 @@
 
 /Ninja.Orders/.vs/Ninja.Orders/v16
 /Ninja.Orders/Ninja.Orders/obj
+/Ninja.Orders/Ninja.Orders.Application/obj
+/Ninja.Orders/Ninja.Orders.Domain/bin/Debug/netcoreapp3.1
+/Ninja.Orders/Ninja.Orders.Domain/obj
+/Ninja.Orders/Ninja.Orders.Tests/bin/Debug/netcoreapp3.1
+/Ninja.Orders/Ninja.Orders.Tests/obj
+/Ninja.Orders/Ninja.Orders.Application/bin/Debug/netcoreapp3.1
