@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Ninja.Orders.Application\Ninja.Orders.Application.csproj" />
     <ProjectReference Include="..\Ninja.Orders.Domain\Ninja.Orders.Domain.csproj" />
   </ItemGroup>
 

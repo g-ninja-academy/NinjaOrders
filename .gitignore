@@ -10,3 +10,8 @@
 /Ninja.Orders/Ninja.Orders.Tests/bin/Debug/netcoreapp3.1
 /Ninja.Orders/Ninja.Orders.Tests/obj
 /Ninja.Orders/Ninja.Orders.Application/bin/Debug/netcoreapp3.1
+/.vs
+/Ninja.Orders/Ninja.Orders.Api.Test/obj
+/Ninja.Orders/Ninja.Orders.Api.Test/bin/Debug/netcoreapp3.1
+/Ninja.Orders/Ninja.Orders/bin/Debug/netcoreapp3.1
+/Ninja.Orders/.vs/Ninja.Orders/config
