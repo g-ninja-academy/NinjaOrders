@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Ninja.Orders.Api.Controllers;
 using Ninja.Orders.Application.Common.Interfaces;
+using Ninja.Orders.Application.Models.Order;
 using Ninja.Orders.Domain.Orders;
 using Ninja.Orders.Domain.Products;
 using NUnit.Framework;
@@ -51,7 +52,7 @@ namespace Ninja.Orders.Api.Test.ControllersTest
         {
             _service.Setup(m => m.CreateOrder(It.IsAny<IEnumerable<Product>>(), It.IsAny<Guid>())).Returns(new Order());
 
-            var result = _controller.CreateOrder(order.Products, order.UserId).Result;
+            var result = _controller.CreateOrder(new CreateOrderVm() { Products = order.Products, UserId = order.UserId }).Result;
 
             Assert.IsNotNull(result);
 
@@ -68,7 +69,7 @@ namespace Ninja.Orders.Api.Test.ControllersTest
             _service.Setup(m => m.CreateOrder(It.IsAny<IEnumerable<Product>>(), It.IsAny<Guid>()))
                 .Returns<Order>(default);
 
-            var result = _controller.CreateOrder(new List<Product>(), order.UserId).Result;
+            var result = _controller.CreateOrder(new CreateOrderVm() { Products = new List<Product>(), UserId = order.UserId }).Result;
 
             Assert.IsNotNull(result);
 
@@ -81,7 +82,7 @@ namespace Ninja.Orders.Api.Test.ControllersTest
             _service.Setup(m => m.CreateOrder(It.IsAny<IEnumerable<Product>>(), It.IsAny<Guid>()))
                 .Returns<Order>(default);
 
-            var result = _controller.CreateOrder(order.Products, default).Result;
+            var result = _controller.CreateOrder(new CreateOrderVm() { Products = order.Products, UserId = order.UserId }).Result;
 
             Assert.IsNotNull(result);
 
