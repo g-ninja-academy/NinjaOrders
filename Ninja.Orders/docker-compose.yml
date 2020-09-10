@@ -1,0 +1,13 @@
+version: "3.1"
+services:
+ ninjaorderapi:
+  build: .
+  image: ninjaorderapi:v1  
+  container_name: ninjaorderapi
+  ports:
+       - 5001:80
+  networks:
+       - ninja-network
+networks:
+  ninja-network:
+       external: true
